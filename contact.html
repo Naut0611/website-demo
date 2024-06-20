@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactpagina</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link naar je CSS-bestand -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over ons</a></li>
+                    <li><a href="contact.html">Contact</a></li> <!-- Nieuwe link naar contactpagina -->
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="contact">
+            <h1>Contacteer ons</h1>
+            <p>Vul het onderstaande formulier in om contact met ons op te nemen.</p>
+            
+            <form action="submit.php" method="post">
+                <div class="form-group">
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Bericht:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-contact">Verstuur</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Jouw Bedrijfsnaam. Alle rechten voorbehouden.
+        </div>
+    </footer>
+</body>
+</html>
